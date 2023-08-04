@@ -1917,6 +1917,19 @@ ol {
   }
 }
 
+.btn-reapet:active{
+  transform: scale(0.8);
+}
+
+.tearms-label{
+  color: #00d094 !important;
+}
+.tearms-label:hover{
+
+  cursor: pointer;
+  color: #106a50;
+}
+
 .form-pass__ctoggle, .form-pass__toggle {
   background: none;
   border: none;
