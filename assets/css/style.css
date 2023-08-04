@@ -1845,8 +1845,8 @@ ol {
 
 
 .rotate:hover{
-  border: 2px solid rgb(125, 200, 13);
-  outline: 5px solid rgb(175, 255, 56);
+  border: 2px solid #00d094;
+  outline: 5px solid #04eaa9;
 }
 
 .star-color{
