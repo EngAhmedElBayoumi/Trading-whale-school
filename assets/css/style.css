@@ -525,7 +525,7 @@ ol {
   --title-color-style2:#0C263A;
   --text-color:#6B777F;
   --text-color-light:#6B6F7F;
-  --text-color-2: rgba(255, 255, 255, 0.6);
+  --text-color-2: white;
   --text-color-3: rgba(255, 255, 255, 0.70);
   --bg-color: #EDF2F8;
   --bg-color-trans: rgba(237, 242, 248, 0.22);
@@ -605,9 +605,9 @@ ol {
   --form-border:#DCDFE833;
   --title-color:#FFFFFF;
   --title-color-style2:#BBC2C7;
-  --text-color:rgba(255, 255, 255, 0.6);
+  --text-color:white;
   --text-color-light:#FFFFFF;
-  --text-color-2: rgba(255, 255, 255, 0.6);
+  --text-color-2: white;
   --text-color-3: rgba(255, 255, 255, 0.70);
   --bg-color: rgba(237, 242, 248, 0.08);
   --bg-color-trans: rgba(237, 242, 248, 0.02);
@@ -927,8 +927,9 @@ hr {
 
 .lp-list-table th,
 .lp-list-table td {
+  width: fit-content;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #00d094;
 }
 
 
@@ -936,6 +937,7 @@ hr {
 @media (min-width: 768px) {
   .lp-list-table {
     width: 100%;
+    
   }
 }
 
@@ -9741,6 +9743,12 @@ html[data-bs-theme=dark] .social__link--style1.active svg, html[data-bs-theme=da
 html[data-bs-theme=dark] .partner--gradient::after {
   background: #003E2C;
 }
+
+.green-color{
+  color: #00d094 !important;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
 

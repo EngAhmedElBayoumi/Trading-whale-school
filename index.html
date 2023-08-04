@@ -89,8 +89,12 @@
                   <div class="col-12">
                     <div>
                       <label for="account-email" class="form-label">Email OR Phone</label>
-                      <input type="email" class="form-control" id="account-email" placeholder="Enter your email Or Phone"
-                        required>
+                      <div class="group-control">
+                        <input type="email" class="form-control" id="account-email" placeholder="Enter your email"
+                        required> 
+                        <span><i class="fas fa-repeat green-color" style="width: 50px; height:50px; background-color:gray" onclick="changeaccountemailvalue()"></i></span>
+                      </div>
+                      
                     </div>
                   </div>
                   <div class="col-12">
@@ -153,17 +157,19 @@
 
 
   <script>
-   // function swhitchLoginWethod() to change account-email placholder to email or phone 
-    function swhitchLoginWethod() {
-      var email = document.getElementById("Email");
-      var phone = document.getElementById("Phone");
-      var accountEmail = document.getElementById("account-email");
-      if (email.checked == true) {
-        accountEmail.placeholder = "Enter your email";
-      } else if (phone.checked == true) {
-        accountEmail.placeholder = "Enter your phone";
+   // function changeaccountemailvalue() to change account-email placholder to email or phone 
+
+    function changeaccountemailvalue() {
+      var accountemail = document.getElementById("account-email");
+      if (accountemail.placeholder == "Enter your email") {
+        accountemail.placeholder = "Enter your phone";
+      } else {
+        accountemail.placeholder = "Enter your email";
       }
+      
     }
+    
+   
 
   </script>
 
