@@ -528,6 +528,14 @@
       }
     });
 
+    const dateInput = document.getElementById('birthdate');
+      dateInput.addEventListener('focus', () => {
+        dateInput.setAttribute('placeholder', 'dd/mm/yyyy');
+      });
+      dateInput.addEventListener('blur', () => {
+        dateInput.setAttribute('placeholder', '');
+      });
+
   </script>
 
 
