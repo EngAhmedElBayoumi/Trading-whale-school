@@ -529,12 +529,15 @@
     });
 
     const dateInput = document.getElementById('birthdate');
-      dateInput.addEventListener('focus', () => {
-        dateInput.setAttribute('placeholder', 'dd/mm/yyyy');
-      });
-      dateInput.addEventListener('blur', () => {
-        dateInput.setAttribute('placeholder', '');
-      });
+  // placeholder dd/mm/yy
+  dateInput.addEventListener('keyup', function (e) {
+    if (e.keyCode !== 8) {
+      if (dateInput.value.length === 2 || dateInput.value.length === 5) {
+        this.value += '/';
+      }
+    }
+  });      
+
 
   </script>
 
