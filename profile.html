@@ -164,12 +164,23 @@
     <div class="container">
       <div class="team__wrapper">
         <div class="row g-5 align-items-center">
-          <div class="col-md-5">
-            <div class="team__thumb rotate" style="border-radius: 50%;">
-              <img src="assets/images/team-details/1.png" calss="rotate-img" style="border-radius: 50%;"
-                alt="Team Image">
-            </div>
+
+          <div class="col-md-12 col-lg-5">
+            <div style=" position:relative;">
+              <h1 style="position: absolute; font-size:80px; bottom:10px;right:60px;z-index:9;" class="green-color">
+                1
+              </h1>
+              <h1 style="position: absolute; font-size:90px ;  bottom:10px;left:10px;z-index:9;" class="green-color">
+                <img src="assets/images/rightsign.png" style="width: 100px;" alt="" srcset="">
+              </h1>
+              <div class="team__thumb rotate" style="border-radius: 50%; position:relative;">
+                <img src="assets/images/team-details/1.png" calss="rotate-img" style="border-radius: 50%;"
+                  alt="Team Image">
+              </div>
           </div>
+          </div>
+
+
           <div class="col-md-7">
             <div class="team__content">
               <h2 class="green-color">Ahmed Tarek Ahmed</h2>
@@ -527,14 +538,6 @@
         hiddenInput.value = ''; // Clear the value if no file is selected
       }
     });
-
-    const dateInput = document.getElementById('birthdate');
-    dateInput.setAttribute('placeholder', 'dd/mm/yyyy');
-    dateInput.addEventListener('blur', () => {
-      dateInput.setAttribute('placeholder', 'dd/mm/yyyy');
-    });   
-
-
 
   </script>
 
