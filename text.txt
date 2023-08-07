@@ -6,3 +6,5 @@ Lock In Marketing Page
 Playing Icon in Courses lectures
 remove Pic in pic if he can take screen recorder
 
+tearms modal in courses page 
+
